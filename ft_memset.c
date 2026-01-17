@@ -28,12 +28,12 @@ void	*ft_memset(void *dest, int c, size_t n)
 #include <stdio.h>
 int main(void)
 {
-	char src[] = "bilgi";
+	char src[] = "bioceyhan";
 
 
-    ft_memset(src, 'x', 2);
+    ft_memset(src, 'c', 1);
 
-	printf("%s", src);
+	printf("%s\n", src);
 }
 
 

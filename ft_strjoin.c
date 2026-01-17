@@ -46,7 +46,7 @@ int	main(void)
 	char	*result;
 
 	/* Test 1: Normal kullanım */
-	result = ft_strjoin("Hello, ", "World!");
+	result = ft_strjoin("Cio", "Ceyhan");
 	printf("Test 1: %s\n", result);
 	free(result);
 
