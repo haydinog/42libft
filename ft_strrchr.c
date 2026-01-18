@@ -29,7 +29,6 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int		i;
 	char	*p;
 
 	while (*s)

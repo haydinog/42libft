@@ -36,6 +36,8 @@ void	my_test_function(unsigned int i, char *c)
 
 int	main(void)
 {
+	#include <stdio.h>
+	
 	char str[] = "merhaba dunya";
 
 	printf("Islemden once: %s\n", str);

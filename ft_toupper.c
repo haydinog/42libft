@@ -18,6 +18,8 @@ int	ft_toupper(int c)
 }
 int main(void)
 {
+	#include <stdio.h>
+	
 	int a = 99;
 	printf("%d",ft_toupper(a));
 }

@@ -27,6 +27,8 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 
 int main()
 {
+	#include <stdio.h>
+	
 	char s1[] = "selamqdwqdwqdqw";
 	char s2[] = "selemqwdqwdqw";
 

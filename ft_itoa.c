@@ -17,9 +17,9 @@ static int	n_digits(int n)
 	int	digit;
 
 	digit = 0;
-	if (n <= 0)
+	if (n < 0)
 		digit++;
-	while (n != 0)
+	while (n)
 	{
 		n /= 10;
 		digit++;
@@ -41,16 +41,18 @@ static char	*ft_itoa_min(void)
 char	*ft_itoa(int n)
 {
 	char	*str;
-	size_t	len;
+	int		len;
 	int		neg;
 
 	neg = (n < 0);
+	len = n_digits(n);
+	str = (char *)malloc(len + 1);
 	if (n == -2147483648)
 		return (ft_itoa_min());
+	if (n == 0)
+		return (ft_strdup("0"));
 	if (n < 0)
 		n = -n;
-	len = n_digits(n) + neg;
-	str = (char *)malloc(len + 1);
 	if (!str)
 		return (NULL);
 	str[len] = '\0';
@@ -76,7 +78,7 @@ int main()
 	free(result);
 
 	/* Test 2: Negatif sayı */
-	result = ft_itoa(-6789);
+	result = ft_itoa(-5789);
 	printf("Test 2: %s\n", result);
 	free(result);
 
