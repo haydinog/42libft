@@ -12,37 +12,35 @@
 
 #include "libft.h"
 
-void	ft_putchar_fd(char c, int fd)
-{
-	write(fd, &c, 1);
-}
-
 void	ft_putnbr_fd(int n, int fd)
 {
 	if (n == -2147483648)
-	{
-		write(1, "-2147483648", 11);
-	}
+		write(fd, "-2147483648", 11);
 	else if (n < 0)
 	{
 		write(fd, "-", 1);
 		ft_putnbr_fd(-n, fd);
 	}
 	else if (n <= 9)
-	{
-		ft_putchar_fd(n + '0', fd);
-	}
+		ft_putchar_fd(n + 48, fd);
 	else if (n > 9)
 	{
 		ft_putnbr_fd(n / 10, fd);
 		ft_putnbr_fd(n % 10, fd);
 	}
 }
-int main()
+#include <fcntl.h>
+int main(void)
 {	
-	#include <stdio.h>
+	
+	int fd;
+	fd = open("deneme.txt", O_CREAT | O_WRONLY, 777);
+	ft_putnbr_fd(42,fd);
+	ft_putchar_fd('\n',fd);
+	ft_putnbr_fd(-42,fd);
+	ft_putchar_fd('\n',fd);
+	ft_putnbr_fd(0,fd);
+	ft_putchar_fd('\n',fd);
+	ft_putnbr_fd(-2147483648,fd);
 
-	int result;
-	result = (int *)ft_putnbr_fd(50, 1);
-	printf ("%d", result);
 }

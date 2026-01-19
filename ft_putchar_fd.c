@@ -17,12 +17,12 @@ void	ft_putchar_fd(char c, int fd)
 	write(fd, &c, 1);
 }
 
-#include <fcntl.h>
-int main(void)
-{
-	int fd;
-	fd = open("deneme.txt", O_CREAT | O_WRONLY, 777);
-	ft_putchar_fd('k',fd);
-	close (fd);
+// #include <fcntl.h>
+// int main(void)
+// {
+// 	int fd;
+// 	fd = open("deneme.txt", O_CREAT | O_WRONLY, 777);
+// 	ft_putchar_fd('k',fd);
+// 	close (fd);
 
-}
+// }
