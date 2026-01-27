@@ -25,12 +25,12 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
 
-int main()
-{
-	#include <stdio.h>
-	
-	char s1[] = "selamqdwqdwqdqw";
-	char s2[] = "selemqwdqwdqw";
+// int main()
+// {
+// 	#include <stdio.h>
 
-	printf("%d", ft_strncmp(s1, s2, 5));
-}
+// 	char s1[] = "selamqdwqdwqdqw";
+// 	char s2[] = "selemqwdqwdqw";
+
+// 	printf("%d", ft_strncmp(s1, s2, 5));
+// }

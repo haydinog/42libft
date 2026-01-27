@@ -46,11 +46,8 @@ static char	*cpy_words(char const *s, char c)
 
 static char	**ft_free_all(char **split, size_t j)
 {
-	while (j > 0)
-	{
-		j--;
+	while (j--)
 		free(split[j]);
-	}
 	free(split);
 	return (NULL);
 }
@@ -70,7 +67,7 @@ char	**ft_split(char const *s, char c)
 	{
 		while (s[i] && s[i] == c)
 			i++;
-		if (s[i])
+		if (s[i] != c && s[i])
 		{
 			split[j] = cpy_words(&s[i], c);
 			if (!split[j])
@@ -83,17 +80,34 @@ char	**ft_split(char const *s, char c)
 	split[j] = NULL;
 	return (split);
 }
-#include <stdio.h>
-int main()
-{
-	int		i = 0;
-	char **res;
-	char str[] = "selam ben ada ";
-	res = ft_split(str, ' ');
-	while(res[i])
-	{
-		printf("%s\n", res[i]);
-		i++;
-	}
-	free(res[i]);
-}
+// #include <stdio.h>
+// int main(void)
+// {
+// 	int		i = 0;
+// 	char **res;
+// 	char str[] = "selam ben aaada";
+// 	res = ft_split(str, ' ');
+// 	while(res[i])
+// 	{
+// 		printf("%s\n", res[i]);
+// 		free(res[i]);
+// 		i++;
+// 	}
+// 	free(res);
+// 	res = NULL;
+// }
+// #include <stdio.h>
+// int main(void)
+// {
+// 	char **rest;
+// 	char str[] = "     ss  ss s ss ";
+// 	int i = 0;
+// 	rest = ft_split(str, ' ');
+// 	rest[7] = NULL;
+// 	while (rest[i])
+// 	{
+// 		printf("%s\n", rest[i]);
+// 		i++;
+// 	}
+// 	ft_free_all(&rest[i], i);
+// }

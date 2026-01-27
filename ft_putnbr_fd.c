@@ -29,18 +29,16 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd(n % 10, fd);
 	}
 }
-#include <fcntl.h>
-int main(void)
-{	
-	
-	int fd;
-	fd = open("deneme.txt", O_CREAT | O_WRONLY, 777);
-	ft_putnbr_fd(42,fd);
-	ft_putchar_fd('\n',fd);
-	ft_putnbr_fd(-42,fd);
-	ft_putchar_fd('\n',fd);
-	ft_putnbr_fd(0,fd);
-	ft_putchar_fd('\n',fd);
-	ft_putnbr_fd(-2147483648,fd);
-
-}
+// #include <fcntl.h>
+// int main(void)
+// {
+// 	int fd;
+// 	fd = open("deneme.txt", O_CREAT | O_WRONLY, 777);
+// 	ft_putnbr_fd(42,fd);
+// 	ft_putchar_fd('\n',fd);
+// 	ft_putnbr_fd(-42,fd);
+// 	ft_putchar_fd('\n',fd);
+// 	ft_putnbr_fd(0,fd);
+// 	ft_putchar_fd('\n',fd);
+// 	ft_putnbr_fd(-2147483648,fd);
+// }

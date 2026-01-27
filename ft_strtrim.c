@@ -53,14 +53,14 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (newstr);
 }
 
-int main(void)
-{
-	#include <stdio.h>
+// int main(void)
+// {
+// 	#include <stdio.h>
 
-    char *result;
+//     char *result;
 
-    /* Test 1: Baştan ve sondan trim */
-    result = ft_strtrim("   hello world   ", " ");
-    printf("Test 1: '%s'\n", result);
-    free(result);
-}
+//     /* Test 1: Baştan ve sondan trim */
+//     result = ft_strtrim("   hello world   ", " ");
+//     printf("Test 1: '%s'\n", result);
+//     free(result);
+// }

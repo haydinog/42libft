@@ -40,21 +40,21 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	return (ldest + lsrc);
 }
 
-#include <stdio.h>
-#include <string.h>
+// #include <stdio.h>
+// #include <string.h>
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size);
+// size_t	ft_strlcat(char *dst, const char *src, size_t size);
 
-int main(void)
-{
-	char dest[20] = "Hello";
-	char src[] = "abi";
-	size_t result;
+// int main(void)
+// {
+// 	char dest[20] = "Hello";
+// 	char src[] = "abi";
+// 	size_t result;
 
-	result = ft_strlcat(dest, src, 4);
-	
-	printf("Sonuç string: %s\n", dest);
-	printf("Dönen değer: %zu\n", result);
+// 	result = ft_strlcat(dest, src, 4);
 
-	return 0;
-}
+// 	printf("Sonuç string: %s\n", dest);
+// 	printf("Dönen değer: %zu\n", result);
+
+// 	return 0;
+// }

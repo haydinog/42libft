@@ -12,7 +12,6 @@
 
 #include "libft.h"
 
-
 void	*ft_memset(void *dest, int c, size_t n)
 {
 	unsigned char	*h;
@@ -23,17 +22,10 @@ void	*ft_memset(void *dest, int c, size_t n)
 	return (dest);
 }
 
-
-
-#include <stdio.h>
-int main(void)
-{
-	char src[] = "bioceyhan";
-
-
-    ft_memset(src, 'c', 1);
-
-	printf("%s\n", src);
-}
-
-
+// #include <stdio.h>
+// int main(void)
+// {
+// 	char src[] = "bioceyhan";
+//ft_memset(src, 'c', 1);
+// 	printf("%s\n", src);
+//}

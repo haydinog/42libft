@@ -21,15 +21,3 @@ void	ft_putendl_fd(char *s, int fd)
 	}
 	write(fd, "\n", 1);
 }
-
-int	main(void)
-{
-	#include <stdio.h>
-
-	char *mesaj = "Merhaba Dunya!";
-
-	// 1. Standart ciktiya (ekran) yazdirma
-	ft_putendl_fd("selam", 1);
-	ft_putendl_fd(mesaj, 1);
-	write(1, "\n", 1); // Alt satira gecmek icin
-}

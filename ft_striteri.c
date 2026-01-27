@@ -26,26 +26,26 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	}
 }
 
-void	my_test_function(unsigned int i, char *c)
-{
-	if (i % 2 != 0 && (*c >= 'a' && *c <= 'z'))
-	{
-		*c = *c - 32; // Küçük harfi büyük harfe çevirme
-	}
-}
+// void	my_test_function(unsigned int i, char *c)
+// {
+// 	if (i % 2 != 0 && (*c >= 'a' && *c <= 'z'))
+// 	{
+// 		*c = *c - 32; // Küçük harfi büyük harfe çevirme
+// 	}
+// }
 
-int	main(void)
-{
-	#include <stdio.h>
-	
-	char str[] = "merhaba dunya";
+// int	main(void)
+// {
+// 	#include <stdio.h>
 
-	printf("Islemden once: %s\n", str);
+// 	char str[] = "merhaba dunya";
 
-	// Fonksiyonu cagirma
-	ft_striteri(str, &my_test_function);
+// 	printf("Islemden once: %s\n", str);
 
-	printf("Islemden sonra: %s\n", str);
+// 	// Fonksiyonu cagirma
+// 	ft_striteri(str, &my_test_function);
 
-	return (0);
-}
+// 	printf("Islemden sonra: %s\n", str);
+
+// 	return (0);
+// }

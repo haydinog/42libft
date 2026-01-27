@@ -46,11 +46,11 @@ char	*ft_itoa(int n)
 
 	neg = (n < 0);
 	len = n_digits(n);
-	str = (char *)malloc(len + 1);
 	if (n == -2147483648)
 		return (ft_itoa_min());
 	if (n == 0)
 		return (ft_strdup("0"));
+	str = (char *)malloc(len + 1);
 	if (n < 0)
 		n = -n;
 	if (!str)
@@ -66,31 +66,31 @@ char	*ft_itoa(int n)
 	return (str);
 }
 
-int main()
-{
-	#include <stdio.h>
+// int main()
+// {
+// 	#include <stdio.h>
 
-	char *result;
+// 	char *result;
 
-	/* Test 1: Pozitif sayı */
-	result = ft_itoa(12345);
-	printf("Test 1: %s\n", result);
-	free(result);
+// 	/* Test 1: Pozitif sayı */
+// 	result = ft_itoa(12345);
+// 	printf("Test 1: %s\n", result);
+// 	free(result);
 
-	/* Test 2: Negatif sayı */
-	result = ft_itoa(-5789);
-	printf("Test 2: %s\n", result);
-	free(result);
+// 	/* Test 2: Negatif sayı */
+// 	result = ft_itoa(-5789);
+// 	printf("Test 2: %s\n", result);
+// 	free(result);
 
-	/* Test 3: Sıfır */
-	result = ft_itoa(0);
-	printf("Test 3: %s\n", result);
-	free(result);
+// 	/* Test 3: Sıfır */
+// 	result = ft_itoa(0);
+// 	printf("Test 3: %s\n", result);
+// 	free(result);
 
-	/* Test 4: En küçük negatif sayı */
-	result = ft_itoa(-2147483648);
-	printf("Test 4: %s\n", result);
-	free(result);
+// 	/* Test 4: En küçük negatif sayı */
+// 	result = ft_itoa(-2147483648);
+// 	printf("Test 4: %s\n", result);
+// 	free(result);
 
-	return (0);
-}
+// 	return (0);
+// }

@@ -39,30 +39,30 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	total[j] = '\0';
 	return (total);
 }
-int	main(void)
-{
-	#include <stdio.h>
+// int	main(void)
+// {
+// 	#include <stdio.h>
 
-	char	*result;
+// 	char	*result;
 
-	/* Test 1: Normal kullanım */
-	result = ft_strjoin("Cio", "Ceyhan");
-	printf("Test 1: %s\n", result);
-	free(result);
+// 	/* Test 1: Normal kullanım */
+// 	result = ft_strjoin("Cio", "Ceyhan");
+// 	printf("Test 1: %s\n", result);
+// 	free(result);
 
-	/* Test 2: Boş stringler */
-	result = ft_strjoin("", "World!");
-	printf("Test 2: %s\n", result);
-	free(result);
+// 	/* Test 2: Boş stringler */
+// 	result = ft_strjoin("", "World!");
+// 	printf("Test 2: %s\n", result);
+// 	free(result);
 
-	result = ft_strjoin("Hello, ", "");
-	printf("Test 3: %s\n", result);
-	free(result);
+// 	result = ft_strjoin("Hello, ", "");
+// 	printf("Test 3: %s\n", result);
+// 	free(result);
 
-	/* Test 3: Her ikisi de boş */
-	result = ft_strjoin("", "");
-	printf("Test 4: '%s'\n", result);
-	free(result);
+// 	/* Test 3: Her ikisi de boş */
+// 	result = ft_strjoin("", "");
+// 	printf("Test 4: '%s'\n", result);
+// 	free(result);
 
-	return (0);
-}
+// 	return (0);
+// }

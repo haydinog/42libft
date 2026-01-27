@@ -34,30 +34,30 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	return (NULL);
 }
 
-#include <stdio.h>
-#include "libft.h"
+// #include <stdio.h>
+// #include "libft.h"
 
-int main() {
-    const char *big = "Hello, world!istan";
-    const char *little1 = "world";
-    const char *little2 = "earth";
-    size_t len = 20;
+// int main() {
+//     const char *big = "Hello, world!istan";
+//     const char *little1 = "world";
+//     const char *little2 = "earth";
+//     size_t len = 20;
 
-    // İlk örnek: "world" alt string'ini arıyoruz
-    char *result1 = ft_strnstr(big, little1, len);
-    if (result1) {
-        printf("Eşleşme bulundu: %s\n", result1);
-    } else {
-        printf("Eşleşme bulunamadı.\n");
-    }
+//     // İlk örnek: "world" alt string'ini arıyoruz
+//     char *result1 = ft_strnstr(big, little1, len);
+//     if (result1) {
+//         printf("Eşleşme bulundu: %s\n", result1);
+//     } else {
+//         printf("Eşleşme bulunamadı.\n");
+//     }
 
-    // İkinci örnek: "earth" alt string'ini arıyoruz (bulunmayacak)
-    char *result2 = ft_strnstr(big, little2, len);
-    if (result2) {
-        printf("Eşleşme bulundu: %s\n", result2);
-    } else {
-        printf("Eşleşme bulunamadı.\n");
-    }
+//     // İkinci örnek: "earth" alt string'ini arıyoruz (bulunmayacak)
+//     char *result2 = ft_strnstr(big, little2, len);
+//     if (result2) {
+//         printf("Eşleşme bulundu: %s\n", result2);
+//     } else {
+//         printf("Eşleşme bulunamadı.\n");
+//     }
 
-    return 0;
-}
+//     return 0;
+// }

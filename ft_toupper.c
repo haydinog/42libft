@@ -12,14 +12,13 @@
 
 int	ft_toupper(int c)
 {
-	if (c >= 98 && c <= 122)
+	if (c >= 97 && c <= 122)
 		return (c - 32);
 	return (c);
 }
-int main(void)
-{
-	#include <stdio.h>
-	
-	int a = 99;
-	printf("%d",ft_toupper(a));
-}
+// int main(void)
+// {
+// 	#include <stdio.h>
+// 	int a = 99;
+// 	printf("%d",ft_toupper(a));
+// }

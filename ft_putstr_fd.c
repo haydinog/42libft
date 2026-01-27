@@ -20,13 +20,3 @@ void	ft_putstr_fd(char *s, int fd)
 		s++;
 	}
 }
-
-int	main(void)
-{
-	char *mesaj = "Merhaba Dunya!";
-
-	// 1. Standart ciktiya (ekran) yazdirma
-	ft_putstr_fd("Ekrana yazdirilan mesaj: ", 1);
-	ft_putstr_fd(mesaj, 1);
-	write(1, "\n", 1); // Alt satira gecmek icin
-}

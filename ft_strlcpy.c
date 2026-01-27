@@ -12,7 +12,6 @@
 
 #include "libft.h"
 
-
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	i;
@@ -30,34 +29,35 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	return (ft_strlen(src));
 }
 
-int main()
+// int main()
 
-{
-	#include <stdio.h>
-    char    kaynak[] = "Merhaba Dunya"; // 13 karakter
-    char    hedef[20];                 // Sadece 5 karakterlik yerimiz var
-    size_t  sonuc;
-	sonuc = ft_strlcpy(hedef, kaynak, 20);
+// {
+// 	#include <stdio.h>
+//     char    kaynak[] = "Merhaba Dunya"; // 13 karakter
+//     char    hedef[20];                 // Sadece 5 karakterlik yerimiz var
+//     size_t  sonuc;
+// 	sonuc = ft_strlcpy(hedef, kaynak, 20);
 
-    printf("Kaynak metin: %s (Uzunluk: %lu)\n", kaynak, sonuc);
-    printf("Hedef kapasitesi: 5\n\n");
+//     printf("Kaynak metin: %s (Uzunluk: %lu)\n", kaynak, sonuc);
+//     printf("Hedef kapasitesi: 5\n\n");
 
-    // Fonksiyonu çağırıyoruz
-    sonuc = ft_strlcpy(hedef, kaynak, 5);
+//     // Fonksiyonu çağırıyoruz
+//     sonuc = ft_strlcpy(hedef, kaynak, 5);
 
-    printf("Kopyalama bittikten sonra hedef: %s\n", hedef);
-    printf("Fonksiyonun dondugu deger: %zu\n", sonuc);
+//     printf("Kopyalama bittikten sonra hedef: %s\n", hedef);
+//     printf("Fonksiyonun dondugu deger: %zu\n", sonuc);
 
-    // İşte püf noktası burası:
-    if (sonuc >= 5)
-    {
-        printf("\nDIKKAT: Veri kesildi! ");
-        printf("Tum metni kopyalamak icin %zu karakterlik yere ihtiyacin vardi.\n", sonuc + 1);
-    }
-    else
-    {
-        printf("\nBasarili: Veri tam kopyalandi.\n");
-    }
+//     // İşte püf noktası burası:
+//     if (sonuc >= 5)
+//     {
+//         printf("\nDIKKAT: Veri kesildi! ");
+//         printf("Tum metni kopyalamak icin %zu 
+//karakterlik yere ihtiyacin vardi.\n", sonuc + 1);
+//     }
+//     else
+//     {
+//         printf("\nBasarili: Veri tam kopyalandi.\n");
+//     }
 
-    return (0);
-}
+//     return (0);
+// }

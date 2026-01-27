@@ -12,47 +12,50 @@
 
 #include "libft.h"
 
-/*char	*ft_strrchr(const char *s, int c)
-{
-	char	*p;
-
-	while (*s)
-	{
-		if (*(unsigned char *)s == (unsigned char)c)
-			p = ((char *)s);
-		s++;
-	}
-	if (*(unsigned char *)s == (unsigned char)c)
-		return ((char *)s);
-	return (p);
-}*/
-
 char	*ft_strrchr(const char *s, int c)
 {
-	char	*p;
+	int		i;
 
-	while (*s)
+	i = 0;
+	while (s[i])
+		i++;
+	while (i >= 0)
 	{
-		if (*s == c)
-			p = ((char *)s);
-		s++;
+		if (s[i] == (char) c)
+		{
+			return ((char *)(s + i));
+		}
+		i--;
 	}
-	if (*s == c)
-		return ((char *)s);
-	return (p);
+	return (NULL);
 }
 
-int main(void)
-{
-	#include <stdio.h>
+// char	*ft_strrchr(const char *s, int c)
+// {
+// 	char	*p;
 
-    const char cdizi[] = "Merhaba, Dünya!";
-    char cd = 'b';
-    char *ret;
+// 	while (*s)
+// 	{
+// 		if (*s == c)
+// 			p = ((char *)s);
+// 		s++;
+// 	}
+// 	if (*s == c)
+// 		return ((char *)s);
+// 	return (p);
+// }
 
-    ret = ft_strrchr(cdizi, cd);
+// int main(void)
+// {
+// 	#include <stdio.h>
 
-    printf("Bulunan son %c karakterinden itibaren dizi içeriği: %s", cd, ret);
+//     const char cdizi[] = "Merhaba, Düny!";
+//     char cd = 'a';
+//     char *ret;
 
-    return 0;
-}
+//     ret = ft_strrchr(cdizi, cd);
+
+// printf("Bulunan son %c karakterinden itibaren dizi içeriği: %s", cd, ret);
+
+//     return 0;
+// }
